@@ -23,7 +23,7 @@ class RottenTomatoesAgent(Agent.Movies):
         )    
       )
     
-  def update(self, metadata, lang):
+  def update(self, metadata, media, lang):
     #load the rt movie page and grab the ratings
     ratings = {}
     for rating in HTML.ElementFromURL(RT_BASE_URL + metadata.id).xpath('//div[@class="movie_info_area"]//li/a'):
