@@ -30,4 +30,4 @@ class RottenTomatoesAgent(Agent.Movies):
       ratingText = rating.get('title')
       if ratingText != "N/A" and len(ratingText) > 0:
         ratings[rating.xpath('span')[0].text] = float(ratingText.replace('%',''))/10
-    metadata.community_rating = ratings['T-Meter Critics']
+    metadata.rating = ratings['T-Meter Critics']
