@@ -31,3 +31,5 @@ class RottenTomatoesAgent(Agent.Movies):
       if ratingText != "N/A" and len(ratingText) > 0:
         ratings[rating.xpath('span')[0].text] = float(ratingText.replace('%',''))/10
     metadata.rating = ratings['T-Meter Critics']
+    
+    
