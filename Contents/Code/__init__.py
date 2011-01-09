@@ -31,12 +31,16 @@ class RottenTomatoesAgent(Agent.Movies):
 		else:
 			if avg_rating != None:
 				metadata.rating = avg_rating
+		
+		metadata.genres.clear()
 		if Prefs["get_genres"] == "Yes":
-			metadata.genres.clear()
 			for genre_elem in movie_page.xpath('//span[@property="v:genre"]'):
 				metadata.genres.add(genre_elem.text)
+		
 		if Prefs["get_summary"] == "Yes":
 			metadata.summary = movie_page.xpath("id('movie_synopsis_all')")[0].text
+		else:
+			metadata.summary = ''
 		
 		
 		
