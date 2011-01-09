@@ -22,5 +22,9 @@
 	<string>Agent</string>
 	<key>PlexPluginMode</key>
 	<string>AlwaysOn</string>
+	<key>PlexAgentAttributionText</key>
+	<string>
+    Ratings, Summaries, and Genres from &lt;a href="http://www.rottentomatoes.com"&gt;Rotten Tomatoes&lt;/a&gt;
+  </string>
 </dict>
 </plist>

@@ -1,0 +1,28 @@
+[
+
+        {
+                "id"       :        "rating_type",
+                "label"    :        "Rating Type",
+                "type"     :        "enum",
+                "values"   :       ["Average Rating","Tomatometer"],
+                "default"  :        "Average Rating"
+        },
+
+
+        {
+                "id"       :        "get_genres",
+                "label"    :        "Get Genres",
+                "type"     :        "enum",
+                "values"   :       ["Yes","No"],
+                "default"  :        "Yes"
+        },
+
+        {
+                "id"       :        "get_summary",
+                "label"    :        "Get Summary",
+                "type"     :        "enum",
+                "values"   :       ["Yes","No"],
+                "default"  :        "Yes"
+        }
+
+]
