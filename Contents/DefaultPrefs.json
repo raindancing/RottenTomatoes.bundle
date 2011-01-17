@@ -1,6 +1,13 @@
 [
 
         {
+                "id"       :        "get_rating",
+                "label"    :        "Get Rating",
+                "type"     :        "bool",
+                "default"  :        "true"
+        },
+
+        {
                 "id"       :        "rating_type",
                 "label"    :        "Rating Type",
                 "type"     :        "enum",
@@ -8,21 +15,18 @@
                 "default"  :        "Average Rating"
         },
 
-
         {
                 "id"       :        "get_genres",
                 "label"    :        "Get Genres",
-                "type"     :        "enum",
-                "values"   :       ["Yes","No"],
-                "default"  :        "Yes"
+                "type"     :        "bool",
+                "default"  :        "true"
         },
 
         {
                 "id"       :        "get_summary",
                 "label"    :        "Get Summary",
-                "type"     :        "enum",
-                "values"   :       ["Yes","No"],
-                "default"  :        "Yes"
+                "type"     :        "bool",
+                "default"  :        "true"
         }
 
 ]
